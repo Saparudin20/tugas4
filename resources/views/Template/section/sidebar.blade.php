@@ -7,12 +7,9 @@
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li class="">
-                            <a class="js-arrow" href="{{url('dashboard')}}">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                
-                            </ul>
+                        <li>
+                            <a href="{{url('beranda')}}">
+                                <i class="fas fa-tachometer-alt"></i>Beranda</a>
                         </li>
                         <li>
                             <a href="{{url('produk')}}" >
@@ -23,8 +20,8 @@
                                 <i class="fas fa-table"></i>Katagori</a>
                         </li>
                         <li>
-                            <a href="promo">
-                                <i class="far fa-check-square"></i>Promo</a>
+                            <a href="{{url('user')}}">
+                                <i class="far fa-check-square"></i>User</a>
                         </li>
                         
                         <li class="has-sub">

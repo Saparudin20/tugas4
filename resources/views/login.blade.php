@@ -42,19 +42,21 @@
                 <div class="login-wrap">
                     <div class="login-content">
                         <div class="login-logo">
-                            <a href="{{url('dashboard')}}">
+                            <a href="{{url('beranda')}}">
                                 <h3>KETAPANG PUNYE</h3>
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="{{url('dashboard')}}" method="get">
+                            @include('Template.utils.notif')
+                            <form action="{{url('login')}}" method="post">
+                                @csrf
                                 <div class="form-group">
                                     <label>Email Address</label>
-                                    <input class="au-input au-input--full" type="email" name="email" placeholder="Email">
+                                    <input class="au-input au-input--full" type="email" name="email" placeholder="Email" name="email">
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password" name="password">
                                 </div>
                                 <div class="login-checkbox">
                                     <label>
@@ -64,8 +66,7 @@
                                         <a href="#">Forgotten Password?</a>
                                     </label>
                                 </div>
-                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
-                                
+                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>    
                             </form>
                         </div>
                     </div>

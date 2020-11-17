@@ -39,20 +39,20 @@
     <div class="page-wrapper">
 
         <!-- MENU SIDEBAR-->
-        @include('template.section.sidebar')
+        @include('Template.section.sidebar')
         <!-- END MENU SIDEBAR-->
 
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             <!-- HEADER DESKTOP-->
-            @include('template.section.header')
+            @include('Template.section.header')
             <!-- HEADER DESKTOP-->
             <!-- MAIN CONTENT-->
             <div class="main-content">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            @include('template.utils.notif')
+                            @include('Template.utils.notif')
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
             </div>
         </div>
             <!-- FOOTER MAIN CONTENT-->
-            @include ('template.section.footer')
+            @include ('Template.section.footer')
             <!-- END FOOTER MAIN CONTENT-->
      
             <!-- END MAIN CONTENT-->
