@@ -17,7 +17,7 @@
 							Berat : {{$produk->berat}} gr
 						 </p>
 						 <p>
-						 	{!! $produk->deskripsri !!}
+						 	{!! ($produk->deskripsri) !!}
 						 </p>		
 					</div>
 				</div>
