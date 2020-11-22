@@ -9,7 +9,7 @@ class UserController extends Controller
 		$data['list_user'] = User::all();
 		return view('user.index', $data);
 	}
-
+ 
 	function create(){
 		return view('user.create');
 	}

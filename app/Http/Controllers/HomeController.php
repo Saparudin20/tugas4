@@ -6,15 +6,15 @@ namespace App\Http\Controllers;
 
 
 		function showberanda(){
-			return view(beranda);
+			return view('beranda');
 		}
 
 		function showproduk(){
-			return view(produk);
+			return view('produk');
 		}
 
 		function showkatagori(){
-			return view(katagori);
+			return view('katagori');
 		}
 
 		function test($produk, $hargaMin=0, $hargaMax=0){

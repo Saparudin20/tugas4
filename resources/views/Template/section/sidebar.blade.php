@@ -29,7 +29,7 @@
                                 <i class="fas fa-copy"></i>Pages</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="login.html">Login</a>
+                                    <a href="login">Login</a>
                                 </li>
                                 <li>
                                     <a href="register.html">Register</a>

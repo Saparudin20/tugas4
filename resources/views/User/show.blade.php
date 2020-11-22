@@ -6,7 +6,7 @@
 			<div class="col-md-12">
 				<div class="card">
 					<div class="card-header">
-						Detail Data User
+						 Detail Data User
 					</div>	
 					<div class="card-body">
 						<h3>{{($user->nama)}}</h3>

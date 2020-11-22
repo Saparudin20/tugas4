@@ -22,6 +22,7 @@
     <link href="{{ URL :: asset ('vendor/bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
+
     <link href="{{ URL :: asset ('vendor/animsition/animsition.min.css')}}" rel="stylesheet" media="all">
     <link href="{{ URL :: asset ('vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
     <link href="{{ URL :: asset ('vendor/wow/animate.css')}}" rel="stylesheet" media="all">
@@ -30,6 +31,8 @@
     <link href="{{ URL :: asset ('vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
     <link href="{{ URL :: asset ('vendor/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
 
+    <link rel="stylesheet" href="{{ URL :: asset ('plugins/datatables/css/dataTables.bootstrap4.min.js')}}"></script>
+    <link rel="stylesheet" href="{{ URL :: asset ('plugins/datatables-responsive/css/responsive.bootstrap4.min.js')}}"></script>
     <!-- Main CSS-->
     <link href="{{ URL :: asset ('css/theme.css')}}" rel="stylesheet" media="all">
 
@@ -73,6 +76,8 @@
     <!-- Jquery JS-->
     <script src="{{ URL :: asset ('vendor/jquery-3.2.1.min.js')}}"></script>
     <!-- Bootstrap JS-->
+
+
     <script src="{{ URL :: asset ('vendor/bootstrap-4.1/popper.min.js')}}"></script>
     <script src="{{ URL :: asset ('vendor/bootstrap-4.1/bootstrap.min.js')}}"></script>
     <!-- Vendor JS       -->
@@ -91,8 +96,16 @@
     <script src="{{ URL :: asset ('vendor/select2/select2.min.js')}}">
     </script>
 
+    <script src="{{ URL :: asset ('plugins/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ URL :: asset ('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>  
+    <script src="{{ URL :: asset ('plugins/datatables-responsive/js/dataTables.respomsive.min.js')}}"></script>
+    <script src="{{ URL :: asset ('plugins/datatables-responsive/js/respomsive.bootstrap4.min.js')}}"></script>    
     <!-- Main JS-->
     <script src="{{ URL :: asset ('js/main.js')}}"></script>
+
+    <script>
+        $(".table-datatable").dataTable();
+    </script>
 
 </body>
 

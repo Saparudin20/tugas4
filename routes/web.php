@@ -34,8 +34,13 @@ Route::get('katagori/create', [KatagoriController::class, 'create']);
 
 Route::get('test/{produk}/{hargaMin?}/{hargaMax?}', [HomeController::class, 'test']);
 
+Route::prefix('admin')->group(function(){
+	Route::resource('produk', ProdukController::class);
+	Route::resource('user', UserController::class);
 
+});
 
+Route::post('produk/filter', [ProdukController::class, 'filter']);
 
 Route::get('produk', [ProdukController::class, 'index']);
 Route::get('produk/create', [ProdukController::class, 'create']);
